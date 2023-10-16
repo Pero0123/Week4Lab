@@ -5,10 +5,28 @@ import java.util.Scanner;
 public class Calculator {
     public static void main (String[] args)
     {
-        add();
-        subtract();
-        multiply();
-        divide();
+        //promts user for which operator they want
+        System.out.println("Do you want to:\n1. Add\n2.Subtract\n3.Multiply\n4.Divide");
+        Scanner inputs = new Scanner(System.in);
+        int operatorChoice = inputs.nextInt();
+
+        switch(operatorChoice)
+        {
+            case 1://adding
+                add();
+                break;
+            case 2://subrating
+                subtract();
+                break;
+            case 3://multiplying
+                multiply();
+                break;
+            case 4://dividing
+                divide();
+                break;
+            default:
+                break;
+        }
     }
 
 
