@@ -5,8 +5,9 @@ import java.util.Scanner;
 public class Calculator {
     public static void main (String[] args)
     {
-        //add();
+        add();
         subtract();
+        multiply();
     }
 
 
@@ -40,6 +41,23 @@ public class Calculator {
 
         //subtracts the numbers and prints total
         int total = firstNumber - secondNumber;
+        System.out.println("The total is " + total);
+
+    }
+
+    public static void multiply()
+    {
+        //promst user for first number
+        System.out.println("Please enter your first number :");
+        Scanner inputs = new Scanner(System.in);
+        int firstNumber = inputs.nextInt();
+
+        //promts user for second number
+        System.out.println("Please enter your second number");
+        int secondNumber = inputs.nextInt();
+
+        //multiplys the two numbers and prints the product
+        int total = firstNumber * secondNumber;
         System.out.println("The total is " + total);
 
     }
